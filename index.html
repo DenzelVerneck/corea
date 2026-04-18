@@ -1,158 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Korea Beauty | Acesso</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;700&display=swap');
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Korea Beauty | Acesso</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;700&display=swap');
 
-        :root {
-            --bg-color: #FDF8F5;
-            --primary-color: #B96871;
-            --text-color: #4A4A4A;
-            --accent-color: #D4AF37;
-            --white: #FFFFFF;
-        }
+		:root {
+			--bg-color: #FDF8F5;
+			--primary-color: #B96871;
+			--text-color: #4A4A4A;
+			--accent-color: #D4AF37;
+			--white: #FFFFFF;
+		}
 
-        body {
-            background-color: var(--bg-color);
-            font-family: 'DM Sans', sans-serif;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
+		body {
+			background-color: var(--bg-color);
+			font-family: 'DM Sans', sans-serif;
+			color: var(--text-color);
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			text-align: center;
+		}
 
-        .presell-card {
-            max-width: 500px;
-            width: 90%;
-            padding: 20px;
-            margin: 20px auto;
-        }
+		.presell-card {
+			max-width: 500px;
+			width: 90%;
+			padding: 20px;
+			margin: 20px auto;
+		}
 
-        .hero-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 25px;
-            box-shadow: 0 5px 15px rgba(185, 104, 113, 0.1);
-            border: 3px solid var(--white);
-        }
+		.hero-img {
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin-bottom: 25px;
+			box-shadow: 0 5px 15px rgba(185, 104, 113, 0.1);
+			border: 3px solid var(--white);
+		}
 
-        .tagline {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--primary-color);
-            font-weight: 700;
-            margin-bottom: 15px;
-            display: block;
-        }
+		.tagline {
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: var(--primary-color);
+			font-weight: 700;
+			margin-bottom: 15px;
+			display: block;
+		}
 
-        h1 {
-            font-family: 'DM Serif Display', serif;
-            font-size: 32px;
-            color: var(--text-color);
-            line-height: 1.2;
-            margin-bottom: 25px;
-        }
+		h1 {
+			font-family: 'DM Serif Display', serif;
+			font-size: 32px;
+			color: var(--text-color);
+			line-height: 1.2;
+			margin-bottom: 25px;
+		}
 
-        .cookie-subtext {
-            font-size: 13px;
-            opacity: 0.8;
-            margin-bottom: 20px;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+		.cookie-subtext {
+			font-size: 13px;
+			opacity: 0.8;
+			margin-bottom: 20px;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
-        .cookie-subtext a {
-            color: var(--text-color);
-            text-decoration: underline;
-        }
+		.cookie-subtext a {
+			color: var(--text-color);
+			text-decoration: underline;
+		}
 
-        .btn {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 20px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            display: inline-block;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(185, 104, 113, 0.3);
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            box-sizing: border-box;
-        }
+		.btn {
+			background-color: var(--primary-color);
+			color: white;
+			padding: 20px 30px;
+			border-radius: 50px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			display: inline-block;
+			transition: all 0.3s ease;
+			box-shadow: 0 8px 25px rgba(185, 104, 113, 0.3);
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			box-sizing: border-box;
+		}
 
-        .btn:hover {
-            background-color: #a3565e;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(185, 104, 113, 0.4);
-        }
+		.btn:hover {
+			background-color: #a3565e;
+			transform: translateY(-3px);
+			box-shadow: 0 12px 30px rgba(185, 104, 113, 0.4);
+		}
 
-        .micro-copy {
-            margin-top: 15px;
-            font-size: 13px;
-            color: #2D5A27; /* Soft success green */
-            font-weight: 700;
-        }
+		.micro-copy {
+			margin-top: 15px;
+			font-size: 13px;
+			color: #2D5A27;
+			/* Soft success green */
+			font-weight: 700;
+		}
 
-        .footer {
-            margin-top: 50px;
-            font-size: 12px;
-            border-top: 1px solid rgba(0,0,0,0.05);
-            padding-top: 20px;
-        }
+		.footer {
+			margin-top: 50px;
+			font-size: 12px;
+			border-top: 1px solid rgba(0, 0, 0, 0.05);
+			padding-top: 20px;
+		}
 
-        .footer a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin: 0 10px;
-            opacity: 0.6;
-        }
+		.footer a {
+			color: var(--text-color);
+			text-decoration: none;
+			margin: 0 10px;
+			opacity: 0.6;
+		}
 
-        .footer a:hover {
-            opacity: 1;
-        }
+		.footer a:hover {
+			opacity: 1;
+		}
 
-        @media (max-width: 480px) {
-            h1 { font-size: 28px; }
-            .hero-img { width: 100px; height: 100px; }
-        }
-    </style>
+		@media (max-width: 480px) {
+			h1 {
+				font-size: 28px;
+			}
+
+			.hero-img {
+				width: 100px;
+				height: 100px;
+			}
+		}
+	</style>
 </head>
+
 <body>
-    <div class="presell-card">
-        <img src="images/presell-woman.png" alt="Pele Jovem Coreana" class="hero-img">
-        
-        <span class="tagline">Ritual Coreano de Rejuvenescimento</span>
-        
-        <h1>Você está a um passo de descobrir o segredo das coreanas para uma pele 10 anos mais jovem</h1>
-        
-        <p class="cookie-subtext">
-            Este site utiliza cookies para garantir a melhor experiência. Ao continuar, você concorda com nossa <a href="politicas.html">Política de Privacidade</a>.
-        </p>
+	<div class="presell-card">
+		<img src="images/presell-woman.png" alt="Pele Jovem Coreana" class="hero-img">
 
-        <a href="protocolo.html" class="btn">👉 QUERO DESCOBRIR O SEGREDO AGORA</a>
+		<span class="tagline">Ritual Coreano de Revitalização</span>
 
-        <div class="micro-copy">
-            ✅ Acesso 100% gratuito - ✅ Sem compromisso
-        </div>
+		<h1>Você está a um passo de conhecer o método das coreanas para uma pele mais firme e revitalizada</h1>
 
-        <div class="footer">
-            <a href="politicas.html">Política de Privacidade</a> | 
-            <a href="termos.html">Termos de Uso</a>
-        </div>
-    </div>
+		<p class="cookie-subtext">
+			Este site utiliza cookies para garantir a melhor experiência. Ao continuar, você concorda com nossa <a
+				href="politicas.html">Política de Privacidade</a>.
+		</p>
+
+		<a href="protocolo.html" class="btn">👉 QUERO DESCOBRIR O SEGREDO AGORA</a>
+
+		<div class="micro-copy">
+			✅ Acesso 100% gratuito - ✅ Sem compromisso
+		</div>
+
+		<div class="footer">
+			<a href="politicas.html">Política de Privacidade</a> |
+			<a href="termos.html">Termos de Uso</a>
+		</div>
+	</div>
 </body>
+
 </html>
