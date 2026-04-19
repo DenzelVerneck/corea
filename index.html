@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Korea Beauty | Acesso</title>
+	<title>Korea Beauty | Ritual para Pele Jovem e Firme</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="prefetch" href="protocolo.html">
@@ -18,6 +18,7 @@
 			--text-color: #4A4A4A;
 			--accent-color: #D4AF37;
 			--white: #FFFFFF;
+			--soft-pink: #F9EBEC;
 		}
 
 		body {
@@ -26,152 +27,327 @@
 			color: var(--text-color);
 			margin: 0;
 			padding: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			min-height: 100vh;
+			overflow-x: hidden;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 40px 20px;
 			text-align: center;
 		}
 
-		.presell-card {
-			max-width: 500px;
-			width: 90%;
-			padding: 20px;
-			margin: 20px auto;
+		.hero-section {
+			padding: 40px 0;
+			min-height: 80vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 
 		.hero-img {
-			width: 120px;
-			height: 120px;
+			width: 140px;
+			height: 140px;
 			border-radius: 50%;
 			object-fit: cover;
 			margin-bottom: 25px;
-			box-shadow: 0 5px 15px rgba(185, 104, 113, 0.1);
-			border: 3px solid var(--white);
+			box-shadow: 0 10px 30px rgba(185, 104, 113, 0.2);
+			border: 4px solid var(--white);
 		}
 
 		.tagline {
 			font-size: 14px;
 			text-transform: uppercase;
-			letter-spacing: 2px;
+			letter-spacing: 3px;
 			color: var(--primary-color);
 			font-weight: 700;
-			margin-bottom: 15px;
+			margin-bottom: 20px;
 			display: block;
 		}
 
 		h1 {
 			font-family: 'DM Serif Display', serif;
-			font-size: 32px;
+			font-size: 38px;
 			color: var(--text-color);
-			line-height: 1.2;
+			line-height: 1.1;
 			margin-bottom: 25px;
+			max-width: 650px;
 		}
 
-		.cookie-subtext {
-			font-size: 13px;
-			opacity: 0.8;
-			margin-bottom: 20px;
-			max-width: 400px;
+		.hero-text {
+			font-size: 18px;
+			line-height: 1.6;
+			margin-bottom: 35px;
+			max-width: 550px;
 			margin-left: auto;
 			margin-right: auto;
-		}
-
-		.cookie-subtext a {
-			color: var(--text-color);
-			text-decoration: underline;
+			opacity: 0.9;
 		}
 
 		.btn {
 			background-color: var(--primary-color);
 			color: white;
-			padding: 20px 30px;
+			padding: 22px 40px;
 			border-radius: 50px;
 			text-decoration: none;
 			font-weight: bold;
-			font-size: 18px;
+			font-size: 20px;
 			display: inline-block;
-			transition: all 0.3s ease;
-			box-shadow: 0 8px 25px rgba(185, 104, 113, 0.3);
+			transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			box-shadow: 0 10px 30px rgba(185, 104, 113, 0.4);
 			border: none;
 			cursor: pointer;
 			width: 100%;
+			max-width: 450px;
 			box-sizing: border-box;
 		}
 
 		.btn:hover {
-			background-color: #a3565e;
-			transform: translateY(-3px);
-			box-shadow: 0 12px 30px rgba(185, 104, 113, 0.4);
+			transform: scale(1.03);
+			box-shadow: 0 15px 40px rgba(185, 104, 113, 0.5);
 		}
 
 		.micro-copy {
-			margin-top: 15px;
-			font-size: 13px;
+			margin-top: 20px;
+			font-size: 14px;
 			color: #2D5A27;
-			/* Soft success green */
 			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			gap: 15px;
 		}
 
-		.footer {
+		/* New Sections for "Fattening" the page */
+		.info-section {
+			background-color: var(--white);
+			padding: 80px 20px;
 			margin-top: 50px;
-			font-size: 12px;
+			border-radius: 40px 40px 0 0;
+			box-shadow: 0 -10px 40px rgba(0,0,0,0.02);
+		}
+
+		h2 {
+			font-family: 'DM Serif Display', serif;
+			font-size: 32px;
+			margin-bottom: 40px;
+			color: var(--primary-color);
+		}
+
+		.features-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 30px;
+			margin-bottom: 60px;
+		}
+
+		.feature-card {
+			background: var(--bg-color);
+			padding: 30px;
+			border-radius: 20px;
+			transition: transform 0.3s ease;
+		}
+
+		.feature-card:hover {
+			transform: translateY(-5px);
+		}
+
+		.feature-icon {
+			font-size: 30px;
+			margin-bottom: 15px;
+			display: block;
+		}
+
+		.feature-card h3 {
+			font-size: 18px;
+			margin-bottom: 10px;
+			color: var(--text-color);
+		}
+
+		.feature-card p {
+			font-size: 15px;
+			line-height: 1.5;
+			margin: 0;
+			opacity: 0.8;
+		}
+
+		.target-audience {
+			background: var(--soft-pink);
+			padding: 40px;
+			border-radius: 30px;
+			text-align: left;
+			margin-bottom: 60px;
+		}
+
+		.target-audience ul {
+			list-style: none;
+			padding: 0;
+			margin: 20px 0 0 0;
+		}
+
+		.target-audience li {
+			padding: 10px 0;
+			padding-left: 30px;
+			position: relative;
+			font-size: 16px;
+		}
+
+		.target-audience li::before {
+			content: "✓";
+			position: absolute;
+			left: 0;
+			color: var(--primary-color);
+			font-weight: bold;
+		}
+
+		.method-about {
+			max-width: 600px;
+			margin: 0 auto 60px;
+			font-size: 16px;
+			line-height: 1.7;
+			opacity: 0.9;
+		}
+
+		/* Footer Styles */
+		.footer {
+			background-color: var(--white);
+			padding: 60px 20px;
+			font-size: 13px;
 			border-top: 1px solid rgba(0, 0, 0, 0.05);
-			padding-top: 20px;
+			color: #888;
 		}
 
 		.footer a {
 			color: var(--text-color);
 			text-decoration: none;
 			margin: 0 10px;
-			opacity: 0.6;
+			opacity: 0.7;
+			transition: opacity 0.2s;
 		}
 
 		.footer a:hover {
 			opacity: 1;
 		}
 
-		@media (max-width: 480px) {
-			h1 {
-				font-size: 28px;
-			}
+		.disclaimer {
+			max-width: 700px;
+			margin: 30px auto;
+			line-height: 1.4;
+			font-size: 11px;
+			text-align: justify;
+		}
 
-			.hero-img {
-				width: 100px;
-				height: 100px;
-			}
+		.company-info {
+			margin-top: 40px;
+			font-weight: bold;
+		}
+
+		.cookie-notice {
+			font-size: 12px;
+			margin-bottom: 30px;
+			opacity: 0.7;
+		}
+
+		@media (max-width: 480px) {
+			h1 { font-size: 30px; }
+			h2 { font-size: 26px; }
+			.hero-img { width: 120px; height: 120px; }
+			.btn { font-size: 18px; padding: 18px 25px; }
 		}
 	</style>
 </head>
 
 <body>
-	<div class="presell-card">
-		<img src="images/presell-woman.png" alt="Pele Jovem Coreana" class="hero-img" width="120" height="120" fetchpriority="high" decoding="async">
+	<div class="hero-section">
+		<div class="container">
+			<img src="images/presell-woman.png" alt="Pele Jovem Coreana" class="hero-img" width="140" height="140"
+				fetchpriority="high" decoding="async">
 
-		<span class="tagline">Ritual Coreano de Revitalização</span>
+			<span class="tagline">Ritual de Revitalização Facial</span>
 
-		<h1>Você está a um passo de conhecer o método das coreanas para uma pele mais firme e revitalizada</h1>
+			<h1>Descubra o método para uma pele visivelmente mais firme e hidratada</h1>
 
-		<p style="font-size: 16px; line-height: 1.5; margin-bottom: 25px; max-width: 450px; margin-left: auto; margin-right: auto; opacity: 0.9;">
-			Descubra uma rotina baseada no bem-estar asiático para hidratar profundamente, uniformizar o tom e trazer mais vitalidade ao seu rosto no dia a dia.
-		</p>
+			<p class="hero-text">
+				Baseado em princípios de bem-estar asiático, este material apresenta uma rotina prática para hidratar profundamente e trazer mais vitalidade ao seu rosto no dia a dia.
+			</p>
 
-		<p class="cookie-subtext">
-			Este site utiliza cookies para garantir a melhor experiência. Ao continuar, você concorda com nossa <a
-				href="politicas.html">Política de Privacidade</a>.
-		</p>
+			<a href="protocolo.html" class="btn">👉 QUERO CONHECER O MÉTODO AGORA</a>
 
-		<a href="protocolo.html" class="btn">👉 QUERO DESCOBRIR O SEGREDO AGORA</a>
-
-		<div class="micro-copy">
-			✅ Acesso 100% gratuito - ✅ Sem compromisso
-		</div>
-
-		<div class="footer">
-			<a href="politicas.html">Política de Privacidade</a> |
-			<a href="termos.html">Termos de Uso</a>
+			<div class="micro-copy">
+				<span>✅ Guia 100% Digital</span>
+				<span>✅ Acesso Imediato</span>
+			</div>
 		</div>
 	</div>
+
+	<div class="info-section">
+		<div class="container">
+			<h2>O que você vai encontrar no guia:</h2>
+			
+			<div class="features-grid">
+				<div class="feature-card">
+					<span class="feature-icon">💧</span>
+					<h3>Hidratação Profunda</h3>
+					<p>Técnicas para manter a umidade da pele por muito mais tempo.</p>
+				</div>
+				<div class="feature-card">
+					<span class="feature-icon">✨</span>
+					<h3>Uniformização de Tom</h3>
+					<p>Como suavizar a aparência de manchas e imperfeições de forma natural.</p>
+				</div>
+				<div class="feature-card">
+					<span class="feature-icon">💆</span>
+					<h3>Ritual de Massagem</h3>
+					<p>Movimentos específicos para estimular a firmeza natural do rosto.</p>
+				</div>
+			</div>
+
+			<div class="target-audience">
+				<h3>Este material é ideal para:</h3>
+				<ul>
+					<li>Quem busca uma rotina de autocuidado simples e eficaz.</li>
+					<li>Quem deseja resultados graduais através de métodos naturais.</li>
+					<li>Quem não possui muito tempo mas preza pela vitalidade da pele.</li>
+					<li>Quem busca alternativas baseadas no bem-estar holístico.</li>
+				</ul>
+			</div>
+
+			<div class="method-about">
+				<h3>Sobre o Método Korea Beauty</h3>
+				<p>
+					O Korea Beauty é focado no equilíbrio entre a saúde da pele e o relaxamento. Não acreditamos em soluções mágicas, mas sim na constância de um ritual que respeita a biologia do seu rosto. Todos os passos são pensados para serem integrados facilmente à sua rotina matinal ou noturna.
+				</p>
+			</div>
+
+			<p class="cookie-notice">
+				Este site utiliza cookies para garantir a melhor experiência. Ao continuar, você concorda com nossa <a
+					href="politicas.html">Política de Privacidade</a>.
+			</p>
+
+			<a href="protocolo.html" class="btn">ACESSAR O MATERIAL COMPLETO</a>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-links">
+				<a href="contato.html">Contato</a> |
+				<a href="politicas.html">Política de Privacidade</a> |
+				<a href="termos.html">Termos de Uso</a>
+			</div>
+
+			<div class="disclaimer">
+				<strong>ADVERTÊNCIA:</strong> As informações contidas neste site são apenas para fins informativos e educacionais. Este produto não substitui o aconselhamento médico profissional. Sempre consulte seu dermatologista antes de iniciar qualquer nova rotina de cuidados com a pele. Os resultados podem variar de pessoa para pessoa.
+				<br><br>
+				<strong>GOOGLE DISCLAIMER:</strong> Este site não faz parte do site do Google ou da Google Inc. Além disso, este site NÃO é endossado pelo Google de nenhuma maneira. GOOGLE é uma marca comercial da GOOGLE, Inc.
+			</div>
+
+			<div class="company-info">
+				Korea Beauty &copy; 2026 - Todos os direitos reservados<br>
+				CNPJ: 00.007.801/0002-60
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
